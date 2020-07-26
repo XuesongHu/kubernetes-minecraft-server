@@ -15,8 +15,6 @@ spec:
       labels:
         app: minecraft-server
     spec:
-      volumes:
-      - name: minecraft-data
       containers:
       - name: minecraft-server
         image: itzg/minecraft-server:latest
