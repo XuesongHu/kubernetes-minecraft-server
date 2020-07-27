@@ -5,5 +5,7 @@ namespace: minecraft
 
 resources:
   - 00-namespace.yaml
+  - 10-volume-claim-local.yaml
+  - 20-volume-local.yaml
   - 30-deployment-local.yaml
   - 40-service-nodeport.yaml

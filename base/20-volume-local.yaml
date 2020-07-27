@@ -10,7 +10,7 @@ spec:
   volumeMode: Filesystem
   accessModes:
   - ReadWriteOnce
-  persistentVolumeReclaimPolicy: Delete
+  persistentVolumeReclaimPolicy: Retain
   storageClassName: local-storage
   local:
     # Edit this to be an actual path on your server's filesystem
@@ -22,4 +22,4 @@ spec:
         - key: kubernetes.io/hostname
           operator: In
           values:
-          - dell3 # Edit this to be an actual kubernetes name of your server
+          - 10.76.215.177 # Edit this to be an actual kubernetes name of your server

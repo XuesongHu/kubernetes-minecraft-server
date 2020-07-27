@@ -15,6 +15,10 @@ spec:
       labels:
         app: minecraft-server
     spec:
+      volumes:
+      - name: minecraft-data
+        persistentVolumeClaim:
+          claimName: minecraft-data-pvc
       containers:
       - name: minecraft-server
         image: itzg/minecraft-server:latest
@@ -28,6 +32,8 @@ spec:
             value: 'TRUE'
           - name: OPS
             value: The_Legend_Miner
+          - name: TYPE
+            value: PAPER
           - name: MODE
             value: survival
           - name: MOTD
