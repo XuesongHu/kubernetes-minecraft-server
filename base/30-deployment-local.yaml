@@ -43,6 +43,9 @@ spec:
         ports:
         - containerPort: 25565
           name: minecraft
+        volumeMounts:
+          - name: minecraft-data
+            mountPath:  /data
         readinessProbe:
           exec:
             command:
