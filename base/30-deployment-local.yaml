@@ -30,6 +30,8 @@ spec:
         env:
           - name:  EULA
             value: 'TRUE'
+          - name: VERSION
+            value: '1.16.1'
           - name: OPS
             value: The_Legend_Miner
           - name: TYPE
