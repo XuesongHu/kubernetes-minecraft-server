@@ -20,4 +20,4 @@ spec:
         - key: kubernetes.io/hostname
           operator: In
           values:
-          - 10.76.215.177 # Edit this to be an actual kubernetes name of your server
+          - 10.76.164.208 # Edit this to be an actual kubernetes name of your server
