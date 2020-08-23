@@ -42,4 +42,4 @@ spec:
       path: /run/systemd
 
   nodeSelector:
-    kubernetes.io/hostname: 10.76.215.177
+    kubernetes.io/hostname: 10.76.164.208
