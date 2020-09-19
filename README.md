@@ -71,6 +71,7 @@ kubectl cp ~/Downloads/LuckPerms-Bukkit-5.1.93.jar minecraft-server-66f7fc97fc-5
 kubectl cp ~/Downloads/worldedit-bukkit-7.2.0-beta-02.jar minecraft-server-66f7fc97fc-5c4m5:/data/plugins/ -n minecraft
 kubectl cp ~/Downloads/world-08-23-20.tar minecraft-server-66f7fc97fc-5c4m5:/data/ -n minecraft
 kubectl cp ~/Downloads/world_nether-08-23-20.tar minecraft-server-66f7fc97fc-5c4m5:/data/ -n minecraft
+kubectl cp ~/Downloads/world_the_end-08-23-20.tar minecraft-server-66f7fc97fc-5c4m5:/data/ -n minecraft
 ```
 
 Invitation to Help
