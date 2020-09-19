@@ -66,6 +66,7 @@ minecraft server, connect to `192.168.1.203:30565`
 ### Step 5: Rstore backup
 ```bash
 kubectl cp ~/Downloads/Vault.jar minecraft-server-66f7fc97fc-5c4m5:/data/plugins/ -n minecraft
+kubectl cp ~/Downloads/GSit.jar minecraft-server-66f7fc97fc-5c4m5:/data/plugins/ -n minecraft
 kubectl cp ~/Downloads/SetHomes-1.2.7.jar minecraft-server-66f7fc97fc-5c4m5:/data/plugins/ -n minecraft
 kubectl cp ~/Downloads/LuckPerms-Bukkit-5.1.93.jar minecraft-server-66f7fc97fc-5c4m5:/data/plugins/ -n minecraft
 kubectl cp ~/Downloads/worldedit-bukkit-7.2.0-beta-02.jar minecraft-server-66f7fc97fc-5c4m5:/data/plugins/ -n minecraft
