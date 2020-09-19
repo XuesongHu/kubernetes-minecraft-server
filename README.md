@@ -71,6 +71,16 @@ tar -zcvf world_nether-09-18-20.tar.gz ./world_nether/
 tar -zcvf world_the_end-09-18-20.tar.gz ./world_the_end/
 ```
 
+Make sure `pv` is properly removed
+```bash
+kubectl delete pv minecraft-data
+```
+
+Start the minecraft server
+```bash
+kustomize build base | kubectl apply -f -
+```
+
 From local terminal
 ```bash
 kubectl cp ~/Downloads/minecraft/Vault.jar minecraft-server-66f7fc97fc-5c4m5:/data/plugins/ -n minecraft
