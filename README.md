@@ -81,6 +81,13 @@ Start the minecraft server
 kustomize build base | kubectl apply -f -
 ```
 
+Copy world files from minecraft server
+```bash
+kubectl cp minecraft-server-66f7fc97fc-s8dl7:/data/world-09-18-20.tar.gz ~/Downloads/minecraft/world-09-18-20.tar.gz -n minecraft
+kubectl cp minecraft-server-66f7fc97fc-s8dl7:/data/world_nether-09-18-20.tar.gz ~/Downloads/minecraft/world_nether-09-18-20.tar.gz -n minecraft
+kubectl cp minecraft-server-66f7fc97fc-s8dl7:/data/world_the_end-09-18-20.tar.gz ~/Downloads/minecraft/world_the_end-09-18-20.tar.gz -n minecraft
+```
+
 From local terminal
 ```bash
 kubectl cp ~/Downloads/minecraft/Vault.jar minecraft-server-66f7fc97fc-5c4m5:/data/plugins/ -n minecraft
